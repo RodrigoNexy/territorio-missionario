@@ -1,0 +1,460 @@
+@import url('https://fonts.googleapis.com/css2?family=Geologica&family=Rajdhani&display=swap');
+/*
+font-family: 'Geologica', sans-serif;
+font-family: 'Rajdhani', sans-serif;
+*/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+body{
+    background-color: white;
+  
+    max-width: auto;
+    overflow-x: hidden !important;
+}
+
+.principal i{
+    color: transparent;
+}
+
+.topo-imagem{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-image: url(../img/fundopista.png);
+    width: 100%; 
+    height: 665px;   
+    padding-bottom:px ;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.topo-imagem .img-topo{
+    padding-top: 50px;
+    width: 300px;
+    
+}
+
+.principal{
+    padding-top: 50px;
+    background-color: transparent;
+    width: 100%;
+    position:relative;
+    top: -80px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    font-size: 20px;
+
+}
+
+.principal-menu.ativado{
+background-color: red;
+position: absolute;
+text-align: center;
+padding: 20px;
+display: grid;
+color: black;
+top: 80px;
+z-index: 1;
+animation: sobeSecao .8s ease-in-out;
+}
+
+@keyframes sobeSecao{
+    from{
+        transition: .5s;
+        transform: translate3d(60px, 0 ,0);
+    } to{
+        transform: translate3d(0,0,0);
+    }
+}
+
+.principal h1{
+    font-family: 'Geologica', sans-serif;
+    color: white;
+    font-size: 30px;
+}
+
+.principal-menu{
+    display: flex;
+    gap: 50px;
+
+}
+
+.principal-menu a{
+    font-family: 'Geologica', sans-serif;
+    color: white;
+}
+
+.principal-menu a:hover{
+    color: red;
+    transition: .5s;
+}
+
+/* QUEM SOMOS? */
+
+
+
+div.quemsomos{
+    padding-bottom: 20px;
+   
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    
+    align-items: center;
+    
+}
+
+div.quemsomos h1{   display: flex   ;
+    justify-content: center;
+    font-family: 'Geologica', sans-serif;
+    font-size: 40px;
+    color: black;
+}
+
+div.quemsomos p{
+    font-family: 'Rajdhani', sans-serif;
+  font-size: 20px;
+  max-width: 700px;
+  text-align: center;
+}
+
+.container{
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: black;
+    width: 100%;
+    padding: 20px;
+   
+}
+
+.container-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-1 img{
+    width: 250px;
+   height: 250px;
+  
+}
+
+.container-2{
+    display: grid;
+}
+
+.container-2 h1{
+    display: flex;
+   color: white;
+   font-family: 'Geologica', sans-serif;
+    justify-content: center;
+   padding-top: 50px;
+}
+
+.container-2 p{
+    padding-top: 20px;
+    font-family: 'Rajdhani', sans-serif;
+    color: white;
+}
+
+
+/* Nossa missao */
+div.missao{
+    
+    background-color:white;
+    width: 100%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+   
+}
+
+div.missao h1{
+    font-family: 'Geologica', sans-serif;
+    font-size: 40px;
+    color: black;
+   
+}
+
+.missaop{
+    color: black;
+    padding-bottom: 50px;
+    max-width: 900px;
+    text-align: center;
+}
+
+/* GALERIA */
+
+.container-image{ 
+    padding-top: 50px;  
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.container-image .image{
+    justify-content: center;
+    align-items: center;
+    
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+    
+}
+
+.container-image .image img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    border-radius: 5px;
+}
+
+@keyframes fadeIn {
+    0%{
+        transform: scale(.7) translateY(-10px);
+        opacity: 0;
+    }
+}
+.container-ta{
+    padding-top: 50px;
+    width: 100%;
+   padding-bottom: 50px;  
+    background-color: white;
+    font-size: 20px;
+    
+}
+
+.container-ta h1{
+   display: flex;
+   font-family: 'Geologica', sans-serif;
+   justify-content: center;
+}
+
+.container-ta i{
+    color: black;
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+.container-ta i:hover{
+    color: red;
+    transition: .2;
+}
+.container-ta p{
+    display: flex;
+    justify-content: center;
+}
+
+.image h3{
+    font-family: 'Rajdhani', sans-serif;
+    text-align: center;
+}
+
+/* IMAGEM FINAL */
+
+.connect-princ{
+    padding: 20px;
+    width: 100%;
+    padding-top: 50px;
+    background-color: red;
+    padding-bottom: 50px;
+    
+}
+
+.connect-princ h1{
+    font-family: 'Geologica', sans-serif;
+    display: flex;
+    color: white;
+    font-size: 50px;
+    justify-content: center;
+}
+
+.connect-princ p{
+    font-family: 'Rajdhani', sans-serif;
+    padding-top: 20px;
+    display: flex;
+    color: white;
+    font-size: 16px;
+    justify-content: center;
+    
+}
+
+.connect-ok{
+    gap: 20px;
+    padding-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.connect-ok img{
+    width: 250px;
+}
+
+.fotofim{
+    width: 100%;
+    height: 300px;
+    background-image: url(../img/fotofim.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.foto-final {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+.foto-final p{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 20px;
+    color: white;
+}
+
+.foto-final h1{
+    font-family: 'Geologica', sans-serif;
+    font-size: 50px;
+    color: red;
+}
+
+/* footer-principal */
+
+.footer-principal{
+    padding: 20px;
+    width: 100%;
+    height: 300px;
+    background-color: white;
+    padding-bottom: 100px;
+}
+
+.footer-fim{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.footer-fim p{
+    font-family: 'Rajdhani', sans-serif;
+    font-size: 16px;
+    color: black;
+}
+.footer-fim h1{
+    font-family: 'Geologica', sans-serif;
+    color: black;
+    font-size: 50px;
+}
+
+.footer-contato {
+    padding-top: px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    gap: 50px;
+}
+
+.footer-contato a{
+    font-family: 'Rajdhani', sans-serif;
+    padding-top: 20px;
+    gap: 50px;
+    font-size: 50px;
+    color: black;
+}
+
+.footer-contato a:hover{
+    color: red;
+    transition: .5s;
+}
+
+.direitos {
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+   
+}
+.direitos p{
+    font-family: 'Rajdhani', sans-serif;
+    align-items: center;
+    color: black;
+}
+
+/* RESPONSIVIDADE */
+
+@media screen and (max-width: 1055px){
+    
+    .container{
+        display: grid;
+        justify-items: center;
+      
+        grid-template-columns: repeat(1,1fr);
+    }
+
+
+    .container-1 {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 300px;
+}
+
+.principal-menu i{
+    display: none;
+    color: white;
+}
+
+}
+
+@media screen and (max-width: 790px) {
+   
+    .principal-menu{
+       display: none;
+    }
+
+    .principal i{
+        color: white;
+       font-size: 50px;
+    }
+
+    .connect-ok img{
+        width: 40%;
+    }
+    .container-image .image img {
+       
+        display: grid;
+       
+        gap: 50px;
+  
+}}
+
+@media screen and (max-width: 570px){
+    .container-image .image{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}
+
+
