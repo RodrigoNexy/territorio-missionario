@@ -446,9 +446,20 @@ div.missao h1{
        
         display: grid;
        
-        gap: 50px;
-  
-}}
+        gap: 50px; 
+}
+    .quemsomos h1{
+        text-align: center;
+    }
+
+    .container-ta p{
+        text-align: center;
+    }
+
+    .footer-fim{
+        text-align: center;
+    }
+}
 
 @media screen and (max-width: 570px){
     .container-image .image{
